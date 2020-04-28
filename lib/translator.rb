@@ -13,7 +13,17 @@ end
 
 def get_japanese_emoticon(file_path="lib/emoticons.yml", emoticons=":)")
   # code goes here
-
+japanese=""
+data=load_library(file_path)
+data.each{ |key, val|
+  if emoticon==val[:english]
+    japanese=val[:japanese]
+  end
+}
+if japanese==""
+  return "Fuck you sexy!"
+else return japanese
+end
 end
 
 def get_english_meaning(file_path="lib/emoticons.yml", emoticons=":)")
