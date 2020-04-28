@@ -21,7 +21,7 @@ data.each{ |key, val|
   end
 }
 if japanese==""
-  return "Fuck you sexy!"
+  return "Sorry, that emoticon was not found"
 else return japanese
 end
 end
