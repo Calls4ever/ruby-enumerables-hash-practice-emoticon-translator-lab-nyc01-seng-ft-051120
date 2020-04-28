@@ -16,7 +16,7 @@ def get_japanese_emoticon(file_path="lib/emoticons.yml", emoticons=":)")
 japanese=""
 data=load_library(file_path)
 data.each{ |key, val|
-  if emoticon==val[:english]
+  if emoticons==val[:english]
     japanese=val[:japanese]
   end
 }
